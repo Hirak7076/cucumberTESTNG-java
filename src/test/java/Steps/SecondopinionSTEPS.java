@@ -21,7 +21,7 @@ public class SecondopinionSTEPS {
 	@Given("open the browser, enter the sparsh hospital url")
 	public void open_the_browser_enter_the_sparsh_hospital_url() {
 	    
-		driver = new FirefoxDriver();
+		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.sparshhospital.com/");
 		
