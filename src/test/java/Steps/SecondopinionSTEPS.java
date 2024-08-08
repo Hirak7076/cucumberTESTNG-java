@@ -49,8 +49,9 @@ public class SecondopinionSTEPS {
 	}
 
 	@When("user enters the Firstname Lastname Phonenumber Email")
-	public void user_enters_the_firstname_lastname_phonenumber_email() {
-	    
+	public void user_enters_the_firstname_lastname_phonenumber_email() throws InterruptedException {
+
+		Thread.sleep(2000);
 		driver.findElement(By.id("secondopinion_first_name")).sendKeys("Raja");
 		driver.findElement(By.id("secondopinion_last_name")).sendKeys("Mondal");
 		driver.findElement(By.id("secondopinion_phone")).sendKeys("8062486702");
